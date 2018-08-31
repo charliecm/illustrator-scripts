@@ -17,10 +17,20 @@ Custom scripts for Adobe Illustrator by @charliecm to boost productivity.
 
 ## Scripts
 
+### Rename Layers
+
+![](/img/rename-layers.gif?raw=true)
+
+Renames **selected layers** with your input.
+
 ### Make Bounding Rect
+
+![](/img/make-bounding-rect.gif?raw=true)
 
 Creates a rectangle from the **selected path's** bounding box.
 
-### Mask with Rectnagle
+### Mask with Rectangle
+
+![](/img/mask-with-rectangle.gif?raw=true)
 
 Creates a clipping mask from **selected path** with a rectangle as base.
