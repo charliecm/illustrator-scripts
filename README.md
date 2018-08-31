@@ -27,10 +27,10 @@ Renames **selected layers** with your input.
 
 ![](/img/make-bounding-rect.gif?raw=true)
 
-Creates a rectangle from the **selected path's** bounding box.
+Creates a rectangle from the **a selected path's** bounding box.
 
 ### Mask with Rectangle
 
-![](/img/mask-with-rectangle.gif?raw=true)
+![](/img/mask-with-rect.gif?raw=true)
 
-Creates a clipping mask from **selected path** with a rectangle as base.
+Creates a clipping mask from **a selected path** with a rectangle as base.
