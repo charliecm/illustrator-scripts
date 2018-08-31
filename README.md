@@ -1,6 +1,6 @@
-# Illustrator Kit
+# Illustrator Scripts
 
-Custom scripts for Adobe Illustrator by @charliecm to boost productivity.
+Custom scripts for Adobe Illustrator to boost productivity.
 
 ## Installation
 
