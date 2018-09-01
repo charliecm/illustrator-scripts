@@ -19,8 +19,10 @@
 	// Rename selected object(s)
 	var first = selections[0];
 	var name = prompt((selections.length > 1 ?
-		'Rename selected objects to...' :
-		'Rename "' + first.name + '" object to...'
+		'Rename ' + selections.length + ' objects to...' :
+		'Rename ' + (first.name.length ?
+			'"' + first.name + '"' :
+			'selected') + ' object to...'
 		), '');
 	if (!name || !name.length) return;
 	for (var i = 0; i < selections.length; i++) {
