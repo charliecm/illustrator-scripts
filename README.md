@@ -1,6 +1,6 @@
 # Illustrator Scripts
 
-Custom scripts for Adobe Illustrator to boost productivity.
+Utility scripts for Adobe Illustrator to boost productivity in creating illustrative designs.
 
 ## Installation
 
@@ -27,10 +27,10 @@ Renames **current layer** or **selected objects** (not what is selected in the L
 
 ![](/img/make-bounding-rect.gif?raw=true)
 
-Creates a rectangle from the **a selected path's** bounding box.
+Creates a rectangle from **selected path's** bounding box.
 
 ### Mask with Rectangle
 
 ![](/img/mask-with-rect.gif?raw=true)
 
-Creates a clipping mask from **a selected path** with a rectangle as base.
+Creates a clipping mask from **selected path** with a rectangle as base.
