@@ -1,25 +1,33 @@
 /**
  * Rename Layers
- * Renames selected layers with your input.
+ * Renames current layer or selected objects.
  * By Charlie Chao (@charliecm)
  */
 
 (function() {
 	var doc = app.activeDocument;
-	var selected = doc.selection;
-	if (selected.length === 0) return;
+	var selections = doc.selection;
+	if (selections.length === 0) {
+		// Rename current layer
+		var layer = doc.activeLayer;
+		var name = prompt('Rename "' + layer.name + '" layer to...', '');
+		if (!name || !name.length) return;
+		layer.name = name;
+		return;
+	}
 
-	// Prompt for name
-	var name = prompt('Rename selected layer(s) to...', '');
+	// Rename selected object(s)
+	var first = selections[0];
+	var name = prompt((selections.length > 1 ?
+		'Rename selected objects to...' :
+		'Rename "' + first.name + '" object to...'
+		), '');
 	if (!name || !name.length) return;
-
-	// Apply name
-	// TODO: Port more functions from Rename It Sketch plugin
-	for (var i = 0; i < selected.length; i++) {
-		selected[i].name = name;
+	for (var i = 0; i < selections.length; i++) {
+		selections[i].name = name;
 	}
 
 	// Force reselect to update Layers panel
-	selected[0].selected = false;
-	selected[0].selected = true;
+	first.selected = false;
+	first.selected = true;
 })();

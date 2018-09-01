@@ -21,7 +21,7 @@ Custom scripts for Adobe Illustrator to boost productivity.
 
 ![](/img/rename-layers.gif?raw=true)
 
-Renames **selected layers** with your input.
+Renames **current layer** or **selected objects** (not what is selected in the Layers panel). Deselect all to rename the current layer.
 
 ### Make Bounding Rect
 
